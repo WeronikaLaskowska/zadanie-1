@@ -141,6 +141,9 @@ a{
     font-weight: bold;
 }
 @media (max-width: 900px) {
+  body {
+    height: 140vh;
+  }
    .container{
        flex-direction: column;
    }
@@ -148,10 +151,25 @@ a{
        max-width: 60vw;
        margin-bottom: 100px;
        margin-top: 200px;
-   }   
+   }  
+   .left {
+     height: 40vh;
+   } 
+   .middle {
+    width: 30vw;
+    top: 60%;
+  }
   }
   @media (max-width: 600px) {
-      
+    body {
+      height: 180vh;
+    }
+      .left{
+        display: none;
+      }
+      .middle {
+        display: none;
+      }
     .left-side{
         max-width: 100vw;
         margin-top: 700px;
